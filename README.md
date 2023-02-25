@@ -1,17 +1,18 @@
-# No Fuss Astro Template 🚀
+# GitHub Tips 🚀
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lancerossdev/nofuss)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flancerossdev%2Fnofuss)
+Do you have any Git or GitHub Tips to share, do you want to contribute and help community.
 
-Hey there, this is going to be my second Astro template to showcase. As the title said, it's an Astro template without any complex designing.
-This template is made with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com) for the Front-end.
+Than this is the right place for you, great communities are built together, this website will remain open source.
 
-You can [create an Issue](https://github.com/lancerossdev/nofuss/issues/new) or submit a Pull Request if you think there's something wrong or you want to add a new feature on this template. I will appreciate your help!
-
-![Template Preview](https://user-images.githubusercontent.com/102563271/204714426-c2427c94-cd08-4796-bb6e-18a11c3617c8.png)
+You can share the Tips and get a green square on your profile.
 
 
-## Dev Notes 📝
+## Do no cheat
+
+Pleas make sure you do not copy and paste someone elses Tips. We do not want to plagiarize someone elses content. 
+
+
+## Guide for Code Contributors 📝
 
 You can use `npm i` or `yarn` to install dependencies. I personally use `pnpm` because it's what I use on most of my projects.
 
@@ -25,4 +26,4 @@ You can use `npm i` or `yarn` to install dependencies. I personally use `pnpm` b
 
 ## License ⚖️
 
-This repository has [MIT License](https://github.com/lancerossdev/nofuss/blob/main/license).
+This repository has [MIT License](https://github.com/santoshyadavdev/GitHubTips/blob/main/LICENSE).

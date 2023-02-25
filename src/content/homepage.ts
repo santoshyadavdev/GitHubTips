@@ -1,12 +1,12 @@
 export const homepage = [
   {
-    title: "Blazingly Fast",
-    content: "The reason why I chose Astro is because it's blazingly fast. It's also a component-based framework, so you can easily reuse your components.",
+    title: "Collection of Git and GitHub Tips",
+    content: "This site contains Git and GitHub tips, you can contribute Tips too.",
     icon: "charm:rocket",
   },
   {
-    title: "Easy to use",
-    content: "Need to use this template? Just clone it and start writing your content. No complicated setup, no complicated design.",
+    title: "You own your content",
+    content: "The tips submitted by you will be yours, you will get credit for your content.",
     icon: "ph:code-bold",
   },
   {

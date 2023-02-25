@@ -13,16 +13,5 @@ import Features from "@components/Features.astro";
     <p>An Astro Template for blog, docs or landing page without complicated design and setup.</p>
   </section>
   {homepage.map((homepage) => <Features title={homepage.title} icon={homepage.icon} content={homepage.content} />)}
-  <section class="py-20 sm:flex sm:items-center sm:justify-evenly text-center sm:text-left">
-    {
-      (
-        <ul class="grid sm:grid-cols-3 gap-16">
-          {counter.map((counter) => (
-            <Counter number={counter.number} label={counter.label} />
-          ))}
-        </ul>
-      )
-    }
-  </section>
   <Footer />
 </Layout>
