@@ -1,0 +1,19 @@
+---
+import { Icon } from "astro-icon";
+
+export interface Props {
+  title: string;
+  icon: string;
+  content: string;
+}
+
+const { title, icon, content } = Astro.props;
+---
+
+<section class="py-14 sm:flex sm:items-center sm:justify-evenly text-center sm:text-left">
+  <Icon name={icon} class="overflow-hidden inline-flex sm:m-8 w-28 h-28" />
+  <header class="mt-8 max-w-lg sm:my-0 mx-auto sm:mx-0">
+    <h1 class="sm:text-4xl text-3xl font-bold mb-4 dark:text-white">{title}</h1>
+    <p class="max-w-10 font-normal leading-7 dark:text-zinc-300 sm:max-w-sm md:max-w-xl">{content}</p>
+  </header>
+</section>

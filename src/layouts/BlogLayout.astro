@@ -1,0 +1,103 @@
+---
+import Header from "@components/Header.astro";
+import ThemeToggle from "@components/ThemeToggle.astro";
+import "@fontsource/inter/variable.css";
+import "@fontsource/fira-code/variable.css";
+
+
+let { pubDate } = Astro.props.content;
+const { frontmatter } = Astro.props;
+const canonicalURL = new URL(Astro.url).href;
+const thisDate = new Date(pubDate).toLocaleDateString("en", {
+  dateStyle: "long",
+});
+pubDate = pubDate.split("T")[0];
+const ogImageParams = new URLSearchParams({
+  title: JSON.stringify(frontmatter.title),
+}).toString();
+
+export interface Props {
+  heroImage?: string;
+  imageAlt?: string;
+}
+
+const defaultMeta = {
+  image: "/banner.png",
+  imageAlt: "Mountain Logo with NoFuss",
+};
+
+const { heroImage = defaultMeta.image, imageAlt = defaultMeta.imageAlt } = Astro.props as Props;
+
+const classBody =
+  "scrollbar-thin scrollbar-thumb-zinc-400 scrollbar-track-zinc-300 dark:scrollbar-thumb-zinc-600 dark:scrollbar-track-zinc-800 dark:bg-zinc-900 dark:text-white font-inter selection:bg-blue-500/70 text-xl";
+---
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{frontmatter.title}</title>
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="canonical" href={canonicalURL} />
+    <meta name="title" content={frontmatter.title} />
+    <meta name="description" content={frontmatter.description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={frontmatter.title} />
+    <meta property="og:description" content={frontmatter.description} />
+    <meta property="og:image" content={heroImage} />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta property="og:site_name" content="NoFuss Astro" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta name="twitter:site" content="@lancerossdev" />
+    <meta name="twitter:creator" content="@lancerossdev" />
+    <meta property="twitter:title" content={frontmatter.title} />
+    <meta property="twitter:description" content={frontmatter.description} />
+    <meta property="twitter:image" content={heroImage} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="follow, index" />
+    <meta name="author" content="Lance Ross" />
+    <script is:inline>
+      const primaryColorScheme = "none";
+      const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const currentTheme = localStorage.getItem("theme");
+
+      let theme;
+      if (currentTheme) {
+        theme = currentTheme === "dark" ? "dark" : "";
+      } else {
+        if (primaryColorScheme === "dark" || (primaryColorScheme === "none" && darkModeMediaQuery)) {
+          theme = "dark";
+        } else if (primaryColorScheme === "light") {
+          theme = "";
+        } else {
+          theme = darkModeMediaQuery ? "dark" : "";
+        }
+      }
+      document.documentElement.className = theme;
+    </script>
+    <script src="@scripts/main.js"></script>
+  </head>
+  <body class={classBody}>
+    <Header />
+    <main class="mx-auto max-w-4xl md:px-20 p-8">
+      <h1 class="sm:text-4xl text-3xl font-bold my-5">{frontmatter.title}</h1>
+      <p class="dark:text-zinc-300 text-zinc-700 text-base">{pubDate}</p>
+      <section
+        class="prose sm:prose-lg dark:text-slate-200 prose-a:dark:text-blue-400 prose-a:no-underline prose-pre:scrollbar-thin prose-pre:scrollbar-thumb-zinc-400 prose-pre:scrollbar-track-zinc-300 prose-pre:dark:scrollbar-thumb-zinc-500 prose-pre:dark:scrollbar-track-zinc-700 hover:prose-a:underline prose-a:text-blue-700 dark:prose-invert prose-a:underline-offset-2"
+      >
+        <article>
+          <slot />
+        </article>
+      </section>
+      <div class="flex flex-row justify-between">
+        <a href="/blog" class="dark:text-blue-400 text-blue-600 hover:underline mt-5">Go back to posts</a>
+      </div>
+    </main>
+    <ThemeToggle />
+  </body>
+</html>

@@ -1,0 +1,13 @@
+---
+export interface Props {
+  number: number;
+  label: string;
+}
+
+const { number, label } = Astro.props;
+---
+
+<li class="text-center">
+  <h1 class="sm:text-4xl text-3xl font-bold mb-3 dark:text-white">{number}</h1>
+  <p>{label}</p>
+</li>

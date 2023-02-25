@@ -1,0 +1,84 @@
+---
+import Header from "@components/Header.astro";
+import ThemeToggle from "@components/ThemeToggle.astro";
+import "@fontsource/inter/variable.css";
+
+export interface Props {
+  title?: string;
+  description?: string;
+  heroImage?: string;
+  imageAlt?: string;
+}
+
+const defaultMeta = {
+  title: "NoFuss Astro",
+  description: "No fuss Astro Template for Landing, Blog and Docs page. No complicated design and setup, just start editing.",
+  image: "/banner.png",
+  imageAlt: "Mountain Logo with NoFuss",
+};
+
+const { title = defaultMeta.title, description = defaultMeta.description, heroImage = defaultMeta.image, imageAlt = defaultMeta.imageAlt } = Astro.props as Props;
+const canonicalURL = new URL(Astro.url).href;
+
+const classBody =
+  "scrollbar-thin scrollbar-thumb-zinc-400 scrollbar-track-zinc-300 dark:scrollbar-thumb-zinc-600 dark:scrollbar-track-zinc-800 dark:bg-zinc-900 dark:text-white font-inter selection:bg-blue-500/70 text-xl";
+---
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="canonical" href={canonicalURL} />
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={heroImage} />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta property="og:site_name" content="NoFuss Astro" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta name="twitter:site" content="@lancerossdev" />
+    <meta name="twitter:creator" content="@lancerossdev" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={heroImage} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="follow, index" />
+    <meta name="author" content="Lance Ross" />
+    <script is:inline>
+      const primaryColorScheme = "none";
+      const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const currentTheme = localStorage.getItem("theme");
+
+      let theme;
+      if (currentTheme) {
+        theme = currentTheme === "dark" ? "dark" : "";
+      } else {
+        if (primaryColorScheme === "dark" || (primaryColorScheme === "none" && darkModeMediaQuery)) {
+          theme = "dark";
+        } else if (primaryColorScheme === "light") {
+          theme = "";
+        } else {
+          theme = darkModeMediaQuery ? "dark" : "";
+        }
+      }
+      document.documentElement.className = theme;
+    </script>
+    <script src="@scripts/main.js"></script>
+  </head>
+  <body class={classBody}>
+    <Header />
+    <main class="m-auto p-6 max-w-4xl md:p-8">
+      <slot />
+    </main>
+    <ThemeToggle />
+  </body>
+</html>

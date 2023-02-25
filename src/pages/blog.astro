@@ -1,0 +1,28 @@
+---
+import Layout from "@layouts/Layout.astro";
+import BlogCard from "@components/BlogCard.astro";
+interface Frontmatter {
+  title: string;
+  pubDate: string;
+  description: string;
+}
+const metadata = {
+  title: "Blog - NoFuss Template",
+  description: "Blog Page of NoFuss Template.",
+};
+
+let blogs = await Astro.glob<Frontmatter>("./blog/*.mdx");
+blogs = blogs.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
+---
+
+<Layout {...metadata}>
+  <section>
+    <h1 class="sm:text-4xl text-3xl font-bold mb-6 dark:text-white">Blog</h1>
+    <p class="dark:text-zinc-300 mb-6">This is how the blog page looks like. Just add an MDX file to the blog folder and it will show up here.</p>
+  </section>
+  <section>
+    <ul>
+      {blogs.map((post) => <BlogCard title={post.frontmatter.title} description={post.frontmatter.description} pubDate={post.frontmatter.pubDate} url={post.url} />)}
+    </ul>
+  </section>
+</Layout>
