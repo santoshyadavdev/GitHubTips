@@ -20,7 +20,7 @@ export default defineConfig({
         astroLayouts,
         {
           default: "@layouts/Layout.astro",
-          "pages/blog/**/*.mdx": "@layouts/BlogLayout.astro",
+          "pages/tips/**/*.mdx": "@layouts/BlogLayout.astro",
         },
       ],
       codeTitle,
