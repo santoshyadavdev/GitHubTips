@@ -1,6 +1,11 @@
 ---
 import { Icon } from "astro-icon";
 
+import { Picture } from '@astrojs/image/components';
+import { Image } from '@astrojs/image/components';
+
+import banner from '../images/banner.png';
+
 const navbar = [
   {
     name: "Home",
@@ -12,7 +17,7 @@ const navbar = [
   },
   {
     name: "About Us",
-    href: "/docs/",
+    href: "/about/",
   },
   {
     name: "Source",
@@ -26,8 +31,7 @@ const mobileIcons = "dark:text-zinc-300 text-black hover:text-zinc-500 dark:hove
 
 <header class="bg-white dark:bg-zinc-900 text-lg dark:text-zinc-300 mx-auto max-w-6xl flex flex-row justify-between">
   <a href="/" class="mx-8 my-5 flex items-center" aria-label="Website Logo">
-    <Icon name="simple-icons:github" class="w-8 h-8" />
-    <span class="self-center sm:hidden text-2xl font-bold whitespace-nowrap dark:text-white ml-3 mt-1">GitHub Tips</span>
+    <Image src="/images/banner.png" width="300" height="80" aspectRatio={1} format="png" alt="GitHub Tips"/>
   </a>
   {
     (
