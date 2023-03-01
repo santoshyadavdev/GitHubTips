@@ -24,6 +24,17 @@ You can use `npm i` or `yarn` to install dependencies. I personally use `pnpm` b
 
 `pnpm preview` - Preview your build locally, before deploying
 
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
 ## License ⚖️
 
 This repository has [MIT License](https://github.com/santoshyadavdev/GitHubTips/blob/main/LICENSE).
