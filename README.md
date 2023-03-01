@@ -9,7 +9,7 @@ You can share the Tips and get a green square on your profile.
 
 ## Do no cheat
 
-Pleas make sure you do not copy and paste someone elses Tips. We do not want to plagiarize someone elses content. 
+Please make sure you do not copy and paste someone elses Tips. We do not want to plagiarize someone elses content. 
 
 
 ## Guide for Code Contributors 📝
