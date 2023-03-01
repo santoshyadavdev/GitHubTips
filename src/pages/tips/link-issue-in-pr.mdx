@@ -1,0 +1,44 @@
+---
+title: Always link issues in PRs
+description: "If your Pull Request is related to an issue, always link it in the description."
+pubDate: March 01, 2023
+contributedBt: "Balastrong"
+---
+
+If your Pull Request is related to an issue, don't forget to link it in the description. Don't worry, you won't need to manually type the link, there are some special keywords to do that for you.
+
+This helps who is reading the Pull Request to understand the context of the changes and if done the proper way (as described here below) a mention will automatically appear in the linked issue.
+
+## Same Repository
+
+- `#[num]`
+- `GH-[num]`
+
+By replacing `[num]` with an issue (or PR) number, they both will render as a link, for example #123 or GH-123.
+
+## External Repository
+
+You can link/mention issues from other repositores as well, for example:
+
+- `User/Repo#[num]`
+- `User/Repo#GH-[num]`
+
+Basically same as linking to the same repository, but you must specify the user and repo in order to make it automatically render as a link.
+
+## Closing Issues
+
+An extra usage which goes beyond linking the issue is using a special keyword from the ones listed here below in the Pull Request description, this will automatically close the issue as soon as the Pull Request is merged.
+
+- close
+- closes
+- closed
+- fix
+- fixes
+- fixed
+- resolve
+- resolves
+- resolved
+
+For example, you can write `Fixes #123` or `Fixes GH-123` in the Pull Request description.
+
+Note: This only works if the Pull Request is targeting the default branch.
