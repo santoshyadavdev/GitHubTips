@@ -1,6 +1,6 @@
 # GitHub Tips 🚀
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Do you have any Git or GitHub Tips to share, do you want to contribute and help community.
@@ -42,6 +42,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://tomthorogood.com"><img src="https://avatars.githubusercontent.com/u/1092941?v=4?s=100" width="100px;" alt="Tom Thorogood"/><br /><sub><b>Tom Thorogood</b></sub></a><br /><a href="https://github.com/santoshyadavdev/GitHubTips/commits?author=tomthorogood" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://leonardomontini.dev/"><img src="https://avatars.githubusercontent.com/u/7253929?v=4?s=100" width="100px;" alt="Leonardo Montini"/><br /><sub><b>Leonardo Montini</b></sub></a><br /><a href="https://github.com/santoshyadavdev/GitHubTips/commits?author=Balastrong" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
