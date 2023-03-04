@@ -1,19 +1,20 @@
 # GitHub Tips 🚀
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Do you have any Git or GitHub Tips to share, do you want to contribute and help community.
+Do you have any Git or GitHub Tips to share, do you want to contribute and help the community.
 
-Than this is the right place for you, great communities are built together, this website will remain open source.
+Then this is the right place for you, great communities are built together, and this website will remain open source.
 
 You can share the Tips and get a green square on your profile.
 
-
 ## Do no cheat
 
-Please make sure you do not copy and paste someone elses Tips. We do not want to plagiarize someone elses content. 
-
+Please make sure you don't copy and paste someone else's Tips. We do not want to plagiarize someone else's content.
 
 ## Guide for Code Contributors 📝
 
@@ -33,7 +34,7 @@ This repository has [MIT License](https://github.com/santoshyadavdev/GitHubTips/
 
 ## Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+A big thank you to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -54,4 +55,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
