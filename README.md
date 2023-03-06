@@ -1,7 +1,7 @@
 # GitHub Tips 🚀
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Do you have any Git or GitHub Tips to share, do you want to contribute and help the community.
@@ -45,6 +45,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://leonardomontini.dev/"><img src="https://avatars.githubusercontent.com/u/7253929?v=4?s=100" width="100px;" alt="Leonardo Montini"/><br /><sub><b>Leonardo Montini</b></sub></a><br /><a href="https://github.com/santoshyadavdev/GitHubTips/commits?author=Balastrong" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/santoshyadavdev"><img src="https://avatars.githubusercontent.com/u/11923975?v=4?s=100" width="100px;" alt="Santosh Yadav"/><br /><sub><b>Santosh Yadav</b></sub></a><br /><a href="https://github.com/santoshyadavdev/GitHubTips/commits?author=santoshyadavdev" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://anuragdev.me"><img src="https://avatars.githubusercontent.com/u/79055093?v=4?s=100" width="100px;" alt="Anurag Sharma"/><br /><sub><b>Anurag Sharma</b></sub></a><br /><a href="https://github.com/santoshyadavdev/GitHubTips/commits?author=anuragts" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://devaa.bio.link/"><img src="https://avatars.githubusercontent.com/u/97371915?v=4?s=100" width="100px;" alt="Deva "/><br /><sub><b>Deva </b></sub></a><br /><a href="https://github.com/santoshyadavdev/GitHubTips/commits?author=Deva-1903" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>

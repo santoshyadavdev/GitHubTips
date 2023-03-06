@@ -50,6 +50,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Deva-1903",
+      "name": "Deva ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97371915?v=4",
+      "profile": "https://devaa.bio.link/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
