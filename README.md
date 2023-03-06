@@ -1,19 +1,18 @@
 # GitHub Tips 🚀
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Do you have any Git or GitHub Tips to share, do you want to contribute and help community.
+Do you have any Git or GitHub Tips to share, do you want to contribute and help the community.
 
-Than this is the right place for you, great communities are built together, this website will remain open source.
+Then this is the right place for you, great communities are built together, and this website will remain open source.
 
 You can share the Tips and get a green square on your profile.
 
-
 ## Do no cheat
 
-Please make sure you do not copy and paste someone elses Tips. We do not want to plagiarize someone elses content. 
-
+Please make sure you don't copy and paste someone else's Tips. We do not want to plagiarize someone else's content.
 
 ## Guide for Code Contributors 📝
 
