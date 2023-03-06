@@ -4,8 +4,9 @@ export interface Props {
   description: string;
   pubDate: string;
   url: string | undefined;
+  contributedBy: string;
 }
-let { title, description, pubDate, url } = Astro.props;
+let { title, description, pubDate, url , contributedBy } = Astro.props;
 const shortDate = new Date(pubDate).toLocaleDateString("en", {
   dateStyle: "short",
 });
@@ -15,6 +16,7 @@ url = url + "/";
 <li class="flex flex-col gap-2 sm:grid-cols-4 leading-relaxed rounded-2xl border-zinc-700 dark:text-zinc-400">
   <a class="col-span-3 flex flex-col gap-2 sm:gap-4 p-5 my-2 hover:dark:bg-zinc-800 hover:bg-zinc-200 rounded-lg" href={url}>
     <span class="flex items-center justify-between mb-1"><h2 class="text-xl text-black dark:text-white">{title}</h2><span class="shrink-0 text-base">{shortDate}</span></span>
+    <span class="text-lg">Contributed By - {contributedBy} </span>
     <p class="text-base text-black dark:text-zinc-300">{description}</p>
   </a>
 </li>
